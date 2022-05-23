@@ -33,7 +33,7 @@ You need to have the following software installed before you can build Zecwallet
 * [Rust v1.40+](https://www.rust-lang.org/tools/install)
 
 ```
-git clone https://github.com/adityapk00/zecwallet-lite.git
+git clone https://github.com/zingolabs/zecwallet-lite.git
 cd zecwallet-lite
 
 yarn install
