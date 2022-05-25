@@ -5,8 +5,10 @@ Zecwallet Lite is zaddr-first, Sapling-compatible lightwallet client for Zcash. 
 - Full support for incoming and outgoing memos
 - Fully encrypt your private keys, using viewing keys to sync the blockchain
 
-## Download
-Download compiled binaries from our [tags page](https://github.com/zingolabs/zecwallet-lite/tags)
+## WARNING! Experimental
+* This is experimental software under active development.
+* When we make a release version we will include instructions for download.
+* Until that time, please only use if you know specifically what you are doing!!
 
 ## Privacy 
 * While all the keys and transaction detection happens on the client, the server can learn which blocks contain your shielded transactions.
@@ -31,6 +33,7 @@ You need to have the following software installed before you can build Zecwallet
 * [Nodejs v12.16.1 or higher](https://nodejs.org)
 * [Yarn](https://yarnpkg.com)
 * [Rust v1.40+](https://www.rust-lang.org/tools/install)
+* [Electron](https://www.electronjs.org/)
 
 ```
 git clone https://github.com/zingolabs/zecwallet-lite.git
@@ -39,14 +42,17 @@ cd zecwallet-lite
 yarn install
 yarn build
 ```
-
-To start in development mode, run
-```
-yarn dev
-```
-To start in production mode, run
+The following instructions are tested on Arch Linux:
 ```
 yarn start
 ```
+You should see `Starting the development server...`
+and then `Compiled successfully!` printed out in this terminal.
+
+Then, in another terminal instance, run
+```
+electron .
+```
+Two windows should open, one for the app and one for debugging.
 
 _PS: Zecwallet-Lite is NOT an official wallet, and is not affiliated with the Electric Coin Company in any way._
