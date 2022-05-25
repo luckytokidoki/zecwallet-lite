@@ -5,8 +5,10 @@ Zecwallet Lite is zaddr-first, Sapling-compatible lightwallet client for Zcash. 
 - Full support for incoming and outgoing memos
 - Fully encrypt your private keys, using viewing keys to sync the blockchain
 
-## Download
-Download compiled binaries from our [tags page](https://github.com/zingolabs/zecwallet-lite/tags)
+## WARNING! Experimental
+* This is experimental software under active development.
+* When we make a release version we will include instructions for download.
+* Until that time, please only use if you know specifically what you are doing!!
 
 ## Privacy 
 * While all the keys and transaction detection happens on the client, the server can learn which blocks contain your shielded transactions.
