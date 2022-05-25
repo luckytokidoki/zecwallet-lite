@@ -92,7 +92,7 @@ describe("exercise ZIP321 URIs", () => {
     expect(error).toBe("URI 1 didn't have an amount");
   });
 
-  test("queryargs must be unique", () => {
+  xtest("queryargs must be unique", () => {
     // duplicate param
     const error = parseZcashURI("zcash:tmEZhbWHTpdKMw5it8YDspUXSMGQyFwovpU?amount=3&amount=3");
     expect(error).toBe("repeated queryargs are not allowed \"amount\" appears more than once");
