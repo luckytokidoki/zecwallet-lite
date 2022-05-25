@@ -15,5 +15,14 @@ jobs:
       - name: Yarn
         uses: docker://node:latest
       - run: yarn install
+      - name: Restore compiled rust
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ./native/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo
       - run: yarn build
       - run: yarn test
