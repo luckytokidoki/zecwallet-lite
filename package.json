@@ -6,9 +6,9 @@
   "description": "Zecwallet Lite",
   "license": "MIT",
   "author": {
-    "name": "Aditya Kulkarni",
-    "email": "aditya@zecwallet.co",
-    "url": "https://github.com/adityapk00/zecwallet-lite"
+    "name": "Zingolabs",
+    "email": "zingolabs@zingolabs.org",
+    "url": "https://github.com/zingolabs/zecwallet-lite"
   },
   "dependencies": {
     "@babel/core": "7.12.3",
