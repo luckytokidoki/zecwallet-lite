@@ -25,7 +25,6 @@ lazy_static! {
 }
 
 register_module!(mut m, {
-    //m.export_function("litelib_say_hello", litelib_say_hello)?;
     m.export_function("litelib_wallet_exists", litelib_wallet_exists)?;
     m.export_function("litelib_initialize_new", litelib_initialize_new)?;
     m.export_function("litelib_initialize_existing", litelib_initialize_existing)?;
