@@ -1,6 +1,6 @@
-## ZecWallet Lite
-Zecwallet Lite is zaddr-first, Sapling-compatible lightwallet client for Zcash. It has full support for all Zcash features:
-- Send + receive shielded transactions
+## Zecwallet Lite
+Zecwallet Lite is a lightwallet client for Zcash. It has full support for all Zcash features:
+- Send and receive shielded transactions
 - Supports transparent addresses and transactions
 - Full support for incoming and outgoing memos
 - Fully encrypt your private keys, using viewing keys to sync the blockchain
@@ -15,7 +15,6 @@ Zecwallet Lite is zaddr-first, Sapling-compatible lightwallet client for Zcash. 
 * The server also learns other metadata, including your IP address.
 * Finally, note that taddr doesn't provide privacy on-chain.
 
-
 ### Note Management
 Zecwallet Lite does automatic note and utxo management, which means it doesn't allow you to manually select which address to send outgoing transactions from. It follows these principles:
 * Defaults to sending shielded transactions, even if you're sending to a transparent address
@@ -24,26 +23,25 @@ Zecwallet Lite does automatic note and utxo management, which means it doesn't a
 * Will automatically shield your transparent funds at the first opportunity
     * When sending an outgoing transaction to a shielded address, Zecwallet-Lite can decide to use the transaction to additionally shield your transparent funds (i.e., send your transparent funds to your own shielded address in the same transaction)
 
-## Compiling from source
+## Getting Started
 Zecwallet Lite is written in Electron/Javascript and can be build from source. It will also automatically compile the Rust SDK needed to run Zecwallet Lite.
 
-#### Pre-Requisites
-You need to have the following software installed before you can build Zecwallet Lite
+### Prerequisites
+Building Zecwallet Lite requires:
 
 * [Nodejs v12.16.1 or higher](https://nodejs.org)
 * [Yarn](https://yarnpkg.com)
 * [Rust v1.40+](https://www.rust-lang.org/tools/install)
 * [Electron](https://www.electronjs.org/)
 
+### Build and Run Instructions
+> The following instructions are tested on Ubuntu and Arch Linux:
 ```
 git clone https://github.com/zingolabs/zecwallet-lite.git
 cd zecwallet-lite
 
 yarn install
 yarn build
-```
-The following instructions are tested on Arch Linux:
-```
 yarn start
 ```
 You should see `Starting the development server...`
